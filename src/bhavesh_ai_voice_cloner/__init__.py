@@ -3,8 +3,8 @@ try:
 except ImportError:
     from importlib_metadata import version  # For Python <3.8
 
-__version__ = version("chatterbox-tts")
+__version__ = version("bhavesh-ai-voice-cloner")
 
 
-from .tts import ChatterboxTTS
-from .vc import ChatterboxVC
+from .tts import BhaveshTTS
+from .vc import BhaveshVC

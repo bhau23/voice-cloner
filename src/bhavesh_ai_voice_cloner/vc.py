@@ -13,7 +13,7 @@ from .models.s3gen import S3GEN_SR, S3Gen
 REPO_ID = "ResembleAI/chatterbox"
 
 
-class ChatterboxVC:
+class BhaveshVC:
     ENC_COND_LEN = 6 * S3_SR
     DEC_COND_LEN = 10 * S3GEN_SR
 
@@ -36,7 +36,7 @@ class ChatterboxVC:
             }
 
     @classmethod
-    def from_local(cls, ckpt_dir, device) -> 'ChatterboxVC':
+    def from_local(cls, ckpt_dir, device) -> 'BhaveshVC':
         ckpt_dir = Path(ckpt_dir)
         
         # Always load to CPU first for non-CUDA devices to handle CUDA-saved models
@@ -59,7 +59,7 @@ class ChatterboxVC:
         return cls(s3gen, device, ref_dict=ref_dict)
 
     @classmethod
-    def from_pretrained(cls, device) -> 'ChatterboxVC':
+    def from_pretrained(cls, device) -> 'BhaveshVC':
         # Check if MPS is available on macOS
         if device == "mps" and not torch.backends.mps.is_available():
             if not torch.backends.mps.is_built():

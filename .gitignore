@@ -1,4 +1,8 @@
-.vscode
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # Pylance
 pyrightconfig.json
@@ -43,6 +47,64 @@ pip-delete-this-directory.txt
 syn_out/
 checkpoints/
 .gradio
+
+# Audio files (except samples)
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+!samples/*.wav
+!samples/*.mp3
+
+# Model files and caches
+models/
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+.cache/
+huggingface_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
 
 # Ignore generated sample .wav files
 **/*.wav

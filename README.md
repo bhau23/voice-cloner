@@ -1,128 +1,158 @@
 
-<img width="1200" alt="cb-big2" src="https://github.com/user-attachments/assets/bd8c5f03-e91d-4ee5-b680-57355da204d1" />
+# 🎤 Bhavesh AI Voice Cloner
 
-# Chatterbox TTS
+[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cloner.streamlit.app)
+[![GitHub](https://img.shields.io/github/stars/bhavesh-ai/voice-cloner?style=for-the-badge&logo=github)](https://github.com/bhavesh-ai/voice-cloner)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-[![Alt Text](https://img.shields.io/badge/listen-demo_samples-blue)](https://resemble-ai.github.io/chatterbox_demopage/)
-[![Alt Text](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/ResembleAI/Chatterbox)
-[![Alt Text](https://static-public.podonos.com/badges/insight-on-pdns-sm-dark.svg)](https://podonos.com/resembleai/chatterbox)
-[![Discord](https://img.shields.io/discord/1377773249798344776?label=join%20discord&logo=discord&style=flat)](https://discord.gg/rJq9cRJBJ6)
+<div align="center">
+  <h2>🚀 Advanced AI Voice Cloning & Text-to-Speech</h2>
+  <p><em>Transform any text into natural speech using your own voice or any reference audio</em></p>
+</div>
 
-_Made with ♥️ by <a href="https://resemble.ai" target="_blank"><img width="100" alt="resemble-logo-horizontal" src="https://github.com/user-attachments/assets/35cf756b-3506-4943-9c72-c05ddfa4e525" /></a>
+---
 
-We're excited to introduce Chatterbox, [Resemble AI's](https://resemble.ai) first production-grade open source TTS model. Licensed under MIT, Chatterbox has been benchmarked against leading closed-source systems like ElevenLabs, and is consistently preferred in side-by-side evaluations.
+**Bhavesh AI Voice Cloner** is a cutting-edge, open-source Text-to-Speech (TTS) and voice cloning system powered by state-of-the-art AI technology. With just a few seconds of reference audio, you can clone any voice and generate natural-sounding speech with emotion control and perfect pronunciation.
 
-Whether you're working on memes, videos, games, or AI agents, Chatterbox brings your content to life. It's also the first open source TTS model to support **emotion exaggeration control**, a powerful feature that makes your voices stand out. Try it now on our [Hugging Face Gradio app.](https://huggingface.co/spaces/ResembleAI/Chatterbox)
+## ✨ Key Features
 
-If you like the model but need to scale or tune it for higher accuracy, check out our competitively priced TTS service (<a href="https://resemble.ai">link</a>). It delivers reliable performance with ultra-low latency of sub 200ms—ideal for production use in agents, applications, or interactive media.
+- 🎯 **Zero-shot Voice Cloning**: Clone any voice with just seconds of reference audio
+- 🎭 **Emotion Control**: Adjust emotional intensity and expression levels
+- ⚡ **Lightning Fast**: Optimized for real-time generation
+- 🧠 **0.5B Llama Backbone**: Built on state-of-the-art transformer architecture
+- 🎵 **High Quality Audio**: Crystal clear, natural-sounding speech output
+- 🔒 **Ethical AI**: Built-in watermarking for responsible AI usage
+- 🌐 **Multiple Languages**: Supports multiple languages and accents
+- 🚀 **Easy to Use**: Simple API and beautiful Streamlit interface
 
-# Key Details
-- SoTA zeroshot TTS
-- 0.5B Llama backbone
-- Unique exaggeration/intensity control
-- Ultra-stable with alignment-informed inference
-- Trained on 0.5M hours of cleaned data
-- Watermarked outputs
-- Easy voice conversion script
-- [Outperforms ElevenLabs](https://podonos.com/resembleai/chatterbox)
+## 🎯 Use Cases
 
-# Tips
-- **General Use (TTS and Voice Agents):**
-  - The default settings (`exaggeration=0.5`, `cfg_weight=0.5`) work well for most prompts.
-  - If the reference speaker has a fast speaking style, lowering `cfg_weight` to around `0.3` can improve pacing.
+- 🎬 **Content Creation**: Videos, podcasts, audiobooks
+- 🎮 **Gaming**: Character voices and narration
+- 📱 **Applications**: Voice assistants and chatbots
+- 🎭 **Entertainment**: Memes, voice effects, creative projects
+- 📚 **Education**: Language learning and accessibility tools
 
-- **Expressive or Dramatic Speech:**
-  - Try lower `cfg_weight` values (e.g. `~0.3`) and increase `exaggeration` to around `0.7` or higher.
-  - Higher `exaggeration` tends to speed up speech; reducing `cfg_weight` helps compensate with slower, more deliberate pacing.
+# 🚀 Quick Start
 
+## 📦 Installation
 
-# Installation
-```shell
-pip install chatterbox-tts
+```bash
+# Clone the repository
+git clone https://github.com/bhavesh-ai/voice-cloner.git
+cd voice-cloner
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run streamlit_app.py
 ```
 
-Alternatively, you can install from source:
-```shell
-# conda create -yn chatterbox python=3.11
-# conda activate chatterbox
-
-git clone https://github.com/resemble-ai/chatterbox.git
-cd chatterbox
-pip install -e .
+### Alternative: Install as Package
+```bash
+pip install bhavesh-ai-voice-cloner
 ```
-We developed and tested Chatterbox on Python 3.11 on Debain 11 OS; the versions of the dependencies are pinned in `pyproject.toml` to ensure consistency. You can modify the code or dependencies in this installation mode.
+## 💻 Usage
 
-
-# Usage
+### Python API
 ```python
 import torchaudio as ta
-from chatterbox.tts import ChatterboxTTS
+from bhavesh_ai_voice_cloner.tts import BhaveshTTS
 
-model = ChatterboxTTS.from_pretrained(device="cuda")
+# Initialize the model
+model = BhaveshTTS.from_pretrained(device="cuda")
 
-text = "Ezreal and Jinx teamed up with Ahri, Yasuo, and Teemo to take down the enemy's Nexus in an epic late-game pentakill."
+# Generate speech with default voice
+text = "Hello! This is Bhavesh AI speaking. I can clone any voice and make it sound natural!"
 wav = model.generate(text)
-ta.save("test-1.wav", wav, model.sr)
+ta.save("output.wav", wav, model.sr)
 
-# If you want to synthesize with a different voice, specify the audio prompt
-AUDIO_PROMPT_PATH = "YOUR_FILE.wav"
-wav = model.generate(text, audio_prompt_path=AUDIO_PROMPT_PATH)
-ta.save("test-2.wav", wav, model.sr)
+# Clone a specific voice
+REFERENCE_AUDIO = "path/to/your/reference.wav"
+wav = model.generate(text, audio_prompt_path=REFERENCE_AUDIO)
+ta.save("cloned_voice.wav", wav, model.sr)
 ```
-See `example_tts.py` and `example_vc.py` for more examples.
 
-# Supported Lanugage
-Currenlty only English.
+### Streamlit Web Interface
+For a user-friendly interface, run the Streamlit app:
+```bash
+streamlit run streamlit_app.py
+```
 
-# Acknowledgements
+## 🎛️ Advanced Parameters
+
+- `exaggeration` (0.25-2.0): Control emotional intensity (default: 0.5)
+- `cfg_weight` (0.0-1.0): Control speech pacing and clarity (default: 0.5)
+- `temperature` (0.05-5.0): Control randomness in generation (default: 0.8)
+- `repetition_penalty` (1.0-2.0): Prevent repetitive speech patterns (default: 1.2)
+
+## 🌍 Supported Languages
+Currently supporting **English** with plans to expand to more languages.
+
+## 🤝 Contributing
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## 🙏 Acknowledgements
+This project builds upon excellent open-source work:
 - [Cosyvoice](https://github.com/FunAudioLLM/CosyVoice)
 - [Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
 - [HiFT-GAN](https://github.com/yl4579/HiFTNet)
 - [Llama 3](https://github.com/meta-llama/llama3)
 - [S3Tokenizer](https://github.com/xingchensong/S3Tokenizer)
 
-# Built-in PerTh Watermarking for Responsible AI
+## 🔐 Responsible AI & Watermarking
 
-Every audio file generated by Chatterbox includes [Resemble AI's Perth (Perceptual Threshold) Watermarker](https://github.com/resemble-ai/perth) - imperceptible neural watermarks that survive MP3 compression, audio editing, and common manipulations while maintaining nearly 100% detection accuracy.
+Every audio file generated by Bhavesh AI includes built-in watermarking technology for responsible AI usage. This helps identify AI-generated content and prevents misuse.
 
-
-## Watermark extraction
-
-You can look for the watermark using the following script.
-
+### Watermark Detection
 ```python
 import perth
 import librosa
 
-AUDIO_PATH = "YOUR_FILE.wav"
+# Load the generated audio
+audio, sr = librosa.load("generated_audio.wav", sr=None)
 
-# Load the watermarked audio
-watermarked_audio, sr = librosa.load(AUDIO_PATH, sr=None)
-
-# Initialize watermarker (same as used for embedding)
+# Initialize watermarker
 watermarker = perth.PerthImplicitWatermarker()
 
-# Extract watermark
-watermark = watermarker.get_watermark(watermarked_audio, sample_rate=sr)
-print(f"Extracted watermark: {watermark}")
-# Output: 0.0 (no watermark) or 1.0 (watermarked)
+# Check for watermark
+watermark = watermarker.get_watermark(audio, sample_rate=sr)
+print(f"AI Generated: {watermark > 0.5}")
 ```
 
+## 📞 Support & Community
 
-# Official Discord
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhavesh-ai/voice-cloner/issues)
+- � **Discussions**: [GitHub Discussions](https://github.com/bhavesh-ai/voice-cloner/discussions)
+- 📧 **Contact**: bhavesh.ai.contact@gmail.com
 
-👋 Join us on [Discord](https://discord.gg/rJq9cRJBJ6) and let's build something awesome together!
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Citation
-If you find this model useful, please consider citing.
-```
-@misc{chatterboxtts2025,
-  author       = {{Resemble AI}},
-  title        = {{Chatterbox-TTS}},
+## 🏆 Citation
+If you use this project in your research, please cite:
+```bibtex
+@misc{bhaveshaivoicecloner2025,
+  author       = {{Bhavesh AI}},
+  title        = {{Bhavesh AI Voice Cloner}},
   year         = {2025},
-  howpublished = {\url{https://github.com/resemble-ai/chatterbox}},
+  howpublished = {\url{https://github.com/bhavesh-ai/voice-cloner}},
   note         = {GitHub repository}
 }
 ```
-# Disclaimer
-Don't use this model to do bad things. Prompts are sourced from freely available data on the internet.
+
+## ⚠️ Disclaimer
+This tool is intended for legitimate and ethical uses only. Users are responsible for ensuring they have proper consent before cloning someone's voice. Please use this technology responsibly and in compliance with applicable laws.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by <strong>Bhavesh AI</strong></p>
+  <p>
+    <a href="https://github.com/bhavesh-ai">GitHub</a> •
+    <a href="https://bhavesh-ai-voice-cloner.streamlit.app">Try Online</a> •
+    <a href="mailto:bhavesh.ai.contact@gmail.com">Contact</a>
+  </p>
+</div>

@@ -1,0 +1,23 @@
+[theme]
+primaryColor = "#6366f1"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f8fafc"
+textColor = "#1e293b"
+font = "sans serif"
+
+[server]
+maxUploadSize = 200
+enableCORS = false
+enableXsrfProtection = true
+fileWatcherType = "poll"
+
+[browser]
+gatherUsageStats = false
+showErrorDetails = true
+
+[logger]
+level = "info"
+
+[client]
+caching = true
+displayEnabled = true

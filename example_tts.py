@@ -1,6 +1,6 @@
 import torchaudio as ta
 import torch
-from chatterbox.tts import ChatterboxTTS
+from src.bhavesh_ai_voice_cloner.tts import BhaveshTTS
 
 # Automatically detect the best available device
 if torch.cuda.is_available():
@@ -12,13 +12,16 @@ else:
 
 print(f"Using device: {device}")
 
-model = ChatterboxTTS.from_pretrained(device=device)
+model = BhaveshTTS.from_pretrained(device=device)
 
-text = "Ezreal and Jinx teamed up with Ahri, Yasuo, and Teemo to take down the enemy's Nexus in an epic late-game pentakill."
+text = "Hello! This is Bhavesh AI speaking. I can transform any text into natural-sounding speech with incredible quality and emotion control."
 wav = model.generate(text)
-ta.save("test-1.wav", wav, model.sr)
+ta.save("bhavesh_ai_demo.wav", wav, model.sr)
+
+print("Generated speech saved as 'bhavesh_ai_demo.wav'")
 
 # If you want to synthesize with a different voice, specify the audio prompt
-AUDIO_PROMPT_PATH = "YOUR_FILE.wav"
-wav = model.generate(text, audio_prompt_path=AUDIO_PROMPT_PATH)
-ta.save("test-2.wav", wav, model.sr)
+# AUDIO_PROMPT_PATH = "YOUR_REFERENCE_VOICE.wav"
+# wav_cloned = model.generate(text, audio_prompt_path=AUDIO_PROMPT_PATH)
+# ta.save("bhavesh_ai_cloned_voice.wav", wav_cloned, model.sr)
+# print("Cloned voice saved as 'bhavesh_ai_cloned_voice.wav'")
