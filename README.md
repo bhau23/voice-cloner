@@ -1,15 +1,7 @@
 
 # 🎤 Bhavesh AI Voice Cloner
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cl## ## �📞 Support & Community
-
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
-- 📧 **Contact**: bhavesh.ai.contact@gmail.comport & Community
-
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
-- 📧 **Contact**: bhavesh.ai.contact@gmail.comstreamlit.app)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cloner.streamlit.app)
 [![GitHub](https://img.shields.io/github/stars/bhau23/voice-cloner?style=for-the-badge&logo=github)](https://github.com/bhau23/voice-cloner)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
@@ -187,7 +179,7 @@ print(f"AI Generated: {watermark > 0.5}")
 ## 📞 Support & Community
 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
-- � **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
 - 📧 **Contact**: bhavesh.ai.contact@gmail.com
 
 ## 📄 License
