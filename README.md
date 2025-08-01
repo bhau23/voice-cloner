@@ -1,8 +1,12 @@
 
 # 🎤 Bhavesh AI Voice Cloner
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cloner.streamlit.app)
-[![GitHub](https://img.shields.io/github/stars/bhavesh-ai/voice-cloner?style=for-the-badge&logo=github)](https://github.com/bhavesh-ai/voice-cloner)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cl## 📞 Support & Community
+
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
+- 📧 **Contact**: bhavesh.ai.contact@gmail.comstreamlit.app)
+[![GitHub](https://img.shields.io/github/stars/bhau23/voice-cloner?style=for-the-badge&logo=github)](https://github.com/bhau23/voice-cloner)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
@@ -41,7 +45,7 @@
 ### Method 1: Automated Setup (Recommended)
 ```bash
 # Clone the repository
-git clone https://github.com/bhavesh-ai/voice-cloner.git
+git clone https://github.com/bhau23/voice-cloner.git
 cd voice-cloner
 
 # Run the setup script
@@ -54,7 +58,7 @@ python launch.py streamlit
 ### Method 2: Manual Installation
 ```bash
 # Clone the repository
-git clone https://github.com/bhavesh-ai/voice-cloner.git
+git clone https://github.com/bhau23/voice-cloner.git
 cd voice-cloner
 
 # Install dependencies
@@ -66,7 +70,7 @@ streamlit run streamlit_app.py
 
 ### Method 3: Docker (One-Click)
 ```bash
-git clone https://github.com/bhavesh-ai/voice-cloner.git
+git clone https://github.com/bhau23/voice-cloner.git
 cd voice-cloner
 python launch.py docker
 ```
@@ -192,7 +196,7 @@ If you use this project in your research, please cite:
   author       = {{Bhavesh AI}},
   title        = {{Bhavesh AI Voice Cloner}},
   year         = {2025},
-  howpublished = {\url{https://github.com/bhavesh-ai/voice-cloner}},
+  howpublished = {\url{https://github.com/bhau23/voice-cloner}},
   note         = {GitHub repository}
 }
 ```
@@ -205,7 +209,7 @@ This tool is intended for legitimate and ethical uses only. Users are responsibl
 <div align="center">
   <p>Made with ❤️ by <strong>Bhavesh AI</strong></p>
   <p>
-    <a href="https://github.com/bhavesh-ai">GitHub</a> •
+    <a href="https://github.com/bhau23/voice-cloner">GitHub</a> •
     <a href="https://bhavesh-ai-voice-cloner.streamlit.app">Try Online</a> •
     <a href="mailto:bhavesh.ai.contact@gmail.com">Contact</a>
   </p>
