@@ -38,6 +38,20 @@
 
 ## 📦 Installation
 
+### Method 1: Automated Setup (Recommended)
+```bash
+# Clone the repository
+git clone https://github.com/bhavesh-ai/voice-cloner.git
+cd voice-cloner
+
+# Run the setup script
+python launch.py setup
+
+# Launch the Streamlit app
+python launch.py streamlit
+```
+
+### Method 2: Manual Installation
 ```bash
 # Clone the repository
 git clone https://github.com/bhavesh-ai/voice-cloner.git
@@ -50,7 +64,14 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-### Alternative: Install as Package
+### Method 3: Docker (One-Click)
+```bash
+git clone https://github.com/bhavesh-ai/voice-cloner.git
+cd voice-cloner
+python launch.py docker
+```
+
+### Method 4: Install as Package
 ```bash
 pip install bhavesh-ai-voice-cloner
 ```
@@ -78,7 +99,40 @@ ta.save("cloned_voice.wav", wav, model.sr)
 ### Streamlit Web Interface
 For a user-friendly interface, run the Streamlit app:
 ```bash
+# Quick launch
+python launch.py streamlit
+
+# Or traditional method
 streamlit run streamlit_app.py
+```
+
+### Command Line Interface
+Generate speech directly from command line:
+```bash
+python launch.py cli "Your text here"
+```
+
+### Interactive Demo
+Run the comprehensive demo:
+```bash
+python launch.py demo
+```
+
+## 🛠️ Project Management
+
+### Setup Development Environment
+```bash
+python launch.py setup
+```
+
+### Verify Project Status
+```bash
+python verify_project.py
+```
+
+### Deploy to GitHub
+```bash
+python github_setup.py
 ```
 
 ## 🎛️ Advanced Parameters
