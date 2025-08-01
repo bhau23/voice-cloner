@@ -57,13 +57,14 @@ checkpoints/
 !samples/*.wav
 !samples/*.mp3
 
-# Model files and caches
-models/
-*.bin
-*.ckpt
-*.pt
-*.pth
-*.safetensors
+# Model files and caches (but keep source code)
+models/*.bin
+models/*.ckpt
+models/*.pt
+models/*.pth
+models/*.safetensors
+downloaded_models/
+pretrained_models/
 .cache/
 huggingface_cache/
 
