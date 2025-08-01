@@ -180,7 +180,7 @@ print(f"AI Generated: {watermark > 0.5}")
 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
-- 📧 **Contact**: bhavesh.ai.contact@gmail.com
+- 📧 **Contact**: bhavesh23official@gmail.com
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
