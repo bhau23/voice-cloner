@@ -13,8 +13,17 @@ from PIL import Image
 import pandas as pd
 
 # Import our rebranded TTS system
-from src.bhavesh_ai_voice_cloner.tts import BhaveshTTS
-from src.bhavesh_ai_voice_cloner.vc import BhaveshVC
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
+try:
+    from bhavesh_ai_voice_cloner.tts import BhaveshTTS
+    from bhavesh_ai_voice_cloner.vc import BhaveshVC
+except ImportError:
+    # Fallback for development or different directory structures
+    from src.bhavesh_ai_voice_cloner.tts import BhaveshTTS
+    from src.bhavesh_ai_voice_cloner.vc import BhaveshVC
 
 # Page configuration
 st.set_page_config(
@@ -23,8 +32,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/bhavesh-ai/voice-cloner/discussions',
-        'Report a bug': 'https://github.com/bhavesh-ai/voice-cloner/issues',
+        'Get Help': 'https://github.com/bhau23/voice-cloner/discussions',
+        'Report a bug': 'https://github.com/bhau23/voice-cloner/issues',
         'About': "# Bhavesh AI Voice Cloner\n\nAdvanced AI-powered voice cloning and text-to-speech system."
     }
 )

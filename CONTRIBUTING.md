@@ -23,7 +23,7 @@ We use GitHub to host code, to track issues and feature requests, as well as acc
 
 ### 🐛 Bug Reports
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/bhavesh-ai/voice-cloner/issues/new).
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/bhau23/voice-cloner/issues/new).
 
 **Great Bug Reports** tend to have:
 
@@ -247,8 +247,8 @@ Contributors are recognized in:
 
 ## 📞 Getting Help
 
-- **Questions**: [GitHub Discussions](https://github.com/bhavesh-ai/voice-cloner/discussions)
-- **Issues**: [GitHub Issues](https://github.com/bhavesh-ai/voice-cloner/issues)
+- **Questions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
+- **Issues**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
 - **Email**: bhavesh.ai.contact@gmail.com
 
 ## 📄 License

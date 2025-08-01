@@ -244,7 +244,7 @@ For high-traffic deployments:
 4. **Import errors**: Check Python path and dependencies
 
 ### Support:
-- GitHub Issues: https://github.com/bhavesh-ai/voice-cloner/issues
+- GitHub Issues: https://github.com/bhau23/voice-cloner/issues
 - Email: bhavesh.ai.contact@gmail.com
 """
         

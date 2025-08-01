@@ -246,7 +246,7 @@ Examples:
     print("\n🚀 Ready to try the Streamlit app?")
     print("   streamlit run streamlit_app.py")
     print("\n💡 Need help? Check out our documentation:")
-    print("   https://github.com/bhavesh-ai/voice-cloner")
+    print("   https://github.com/bhau23/voice-cloner")
 
 
 if __name__ == "__main__":

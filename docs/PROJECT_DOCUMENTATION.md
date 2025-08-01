@@ -73,7 +73,7 @@ bhavesh-ai-voice-cloner/
 
 ### 1. Local Development
 ```bash
-git clone https://github.com/bhavesh-ai/voice-cloner.git
+git clone https://github.com/bhau23/voice-cloner.git
 cd voice-cloner
 python setup.py --dev
 streamlit run streamlit_app.py
@@ -269,5 +269,5 @@ for text in texts:
 
 ### Resources
 - **Demo Site**: [Live Streamlit App](https://bhavesh-ai-voice-cloner.streamlit.app)
-- **GitHub**: [Source Code](https://github.com/bhavesh-ai/voice-cloner)
+- **GitHub**: [Source Code](https://github.com/bhau23/voice-cloner)
 - **Documentation**: This file and README.md

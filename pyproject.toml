@@ -50,10 +50,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/bhavesh-ai/voice-cloner"
-Repository = "https://github.com/bhavesh-ai/voice-cloner"
-Documentation = "https://github.com/bhavesh-ai/voice-cloner/wiki"
-"Bug Tracker" = "https://github.com/bhavesh-ai/voice-cloner/issues"
+Homepage = "https://github.com/bhau23/voice-cloner"
+Repository = "https://github.com/bhau23/voice-cloner"
+Documentation = "https://github.com/bhau23/voice-cloner/wiki"
+"Bug Tracker" = "https://github.com/bhau23/voice-cloner/issues"
 "Streamlit App" = "https://bhavesh-ai-voice-cloner.streamlit.app"
 
 [build-system]

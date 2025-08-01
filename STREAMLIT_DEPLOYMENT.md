@@ -52,7 +52,7 @@ gatherUsageStats = false
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/bhavesh-ai/voice-cloner.git
+   git clone https://github.com/bhau23/voice-cloner.git
    cd voice-cloner
    ```
 
@@ -170,8 +170,8 @@ All generated audio includes imperceptible watermarks for:
 ## 📞 Support
 
 ### Getting Help
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhavesh-ai/voice-cloner/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhavesh-ai/voice-cloner/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
 - 📧 **Contact**: bhavesh.ai.contact@gmail.com
 
 ### Community
@@ -199,7 +199,7 @@ Based on state-of-the-art research in:
   <p><strong>Transform your ideas into voice with Bhavesh AI</strong></p>
   <p>
     <a href="https://bhavesh-ai-voice-cloner.streamlit.app">🚀 Try Live Demo</a> •
-    <a href="https://github.com/bhavesh-ai/voice-cloner">📱 GitHub Repo</a> •
+    <a href="https://github.com/bhau23/voice-cloner">📱 GitHub Repo</a> •
     <a href="mailto:bhavesh.ai.contact@gmail.com">✉️ Contact</a>
   </p>
 </div>

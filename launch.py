@@ -226,7 +226,7 @@ Examples:
   python launch.py docker                      # Use Docker container
   python launch.py setup                       # Setup development environment
 
-Visit: https://github.com/bhavesh-ai/voice-cloner
+Visit: https://github.com/bhau23/voice-cloner
         """
     )
     

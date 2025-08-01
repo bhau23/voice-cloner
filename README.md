@@ -1,7 +1,11 @@
 
 # 🎤 Bhavesh AI Voice Cloner
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cl## 📞 Support & Community
+[![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bhavesh-ai-voice-cl## ## �📞 Support & Community
+
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
+- 📧 **Contact**: bhavesh.ai.contact@gmail.comport & Community
 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
@@ -182,8 +186,8 @@ print(f"AI Generated: {watermark > 0.5}")
 
 ## 📞 Support & Community
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhavesh-ai/voice-cloner/issues)
-- � **Discussions**: [GitHub Discussions](https://github.com/bhavesh-ai/voice-cloner/discussions)
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/bhau23/voice-cloner/issues)
+- � **Discussions**: [GitHub Discussions](https://github.com/bhau23/voice-cloner/discussions)
 - 📧 **Contact**: bhavesh.ai.contact@gmail.com
 
 ## 📄 License
